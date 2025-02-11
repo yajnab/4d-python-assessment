@@ -1,0 +1,11 @@
+sale_id,customer_id,product_id,quantity,price_per_unit,total_price,sale_date,errors
+168697645698961,127668228483155495,P4150,5,181.82,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168697736623960,127668228483155495,P2152,4,764.78,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168697919266807,315880229117534235,P5984,1,856.36,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168697383146136,606112227885144813,P4150,1,181.82,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168698056513280,315880229117534235,P2807,2,235.31,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168698133336926,689886229935768065,P6609,2,31.23,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168698214333835,748717230310125017,P8081,2,234.56,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168697822849870,127668228483155495,P3033,2,166.27,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168698292435135,748717230310125017,P8081,2,234.56,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']
+168697985055844,315880229117534235,P9371,2,103.34,ERROR,2024-10-16,['Invalid type for field: total_price. Expected float but got str']

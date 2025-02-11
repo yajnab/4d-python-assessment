@@ -18,6 +18,10 @@ def get_save_filename(source_name):
     sys_logger.info(f"Getting save filename for {source_name}")
     return f"./final_data/{source_name}.parquet"
 
+def get_error_filename(source_name, date):
+    sys_logger.info(f"Getting error filename for {source_name}")
+    return f"./error_reports/errors_{source_name}_{date}.csv"
+
 def save_file(filepath, dataframe):
     sys_logger.info(f"Saving file with {len(dataframe)} rows to {filepath}")
     dataframe.to_parquet(filepath, index=False)
@@ -34,6 +38,10 @@ def read_parquet(filepath):
     sys_logger.info(f"Reading parquet file from {filepath}")
     return pd.read_parquet(filepath)
 
+def read_json(filepath, **kwargs):
+    sys_logger.info(f"Reading json file from {filepath} with kwargs {kwargs}")
+    return pd.read_json(filepath, **kwargs)
+
 def get_read_func(type):
     match type:
         case "csv":
@@ -42,6 +50,8 @@ def get_read_func(type):
             return read_excel
         case "parquet":
             return read_parquet
+        case "json":
+            return read_json
         case _:
             raise ValueError(f"Unsupported file type: {type}")
     
